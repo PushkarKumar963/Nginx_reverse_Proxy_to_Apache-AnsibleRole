@@ -1,0 +1,5 @@
+---
+#installing apache2
+- name: install apache2
+  package: name=apache2 state=present
+  become: yes

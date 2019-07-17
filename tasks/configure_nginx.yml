@@ -1,0 +1,6 @@
+#configuration of nginx
+- name: myproxy
+  copy: src=myproxy dest=/etc/nginx/sites-available/myproxy
+  notify:
+    - restart nginx service
+  become: yes

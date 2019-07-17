@@ -1,0 +1,10 @@
+---
+#start apache2 service
+- name: starting apache2 service
+  service: name=apache2 state=started
+  become: yes
+#start nginx service
+- name: starting nginx service
+  service: name=nginx state=started
+  become: yes 
+-

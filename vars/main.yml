@@ -1,0 +1,6 @@
+---
+# vars file for Nignx-reverse-proxy-to-apache2
+nginx_package: nginx
+user: root
+group: root
+

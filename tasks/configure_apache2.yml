@@ -1,0 +1,11 @@
+--- 
+#configuration of apache2
+- name: ports.conf
+  copy: src=ports.conf dest=/etc/apache2/ports.conf
+
+- name: myproxy.conf
+  copy: src=myproxy.conf dest=/etc/apache2/sites-available/myproxy.conf
+
+  notify: 
+    - restart apache2 service
+  become: yes

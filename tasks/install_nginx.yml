@@ -1,0 +1,8 @@
+---
+- name: install nginx
+  apt:
+   name: nginx
+   state: present
+  become: yes
+- shell: rm -rf /etc/nginx/sites-enabled/default
+  become: yes

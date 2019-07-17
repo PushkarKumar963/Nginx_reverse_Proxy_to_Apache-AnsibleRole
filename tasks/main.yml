@@ -1,0 +1,9 @@
+---
+# tasks file for Nignx-reverse-proxy-to-apache2
+- include_tasks: install_nginx.yml
+- include_tasks: configure_nginx.yml
+- include_tasks: install_apache2.yml
+- include_tasks: configure_apache2.yml
+- include_tasks: service.yml
+
+
